@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './AddPill.module.css'
+import './AddPill.css'
 
 // Define the types for the form fields
 interface PillFormData {
