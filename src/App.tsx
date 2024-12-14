@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Router components
 import AddPill from './pages/AddPill/AddPill';
 import DeletePill from './pages/DeletePill/DeletePill';
 
