@@ -29,14 +29,12 @@ const App: React.FC = () => {
   }
 
   return (
-    <Router>
+    <>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<AddPill />} />
-          <Route path="/delete" element={<DeletePill />} />
-        </Routes>
+        <AddPill />
+        <DeletePill />
       </div>
-    </Router>
+    </>
   );
 };
 

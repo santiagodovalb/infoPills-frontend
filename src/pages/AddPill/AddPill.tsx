@@ -109,7 +109,7 @@ const AddPill: React.FC = () => {
         {error && <p style={{ color: 'red' }}>{error}</p>}
         {success && <p style={{ color: 'green' }}>{success}</p>}
 
-        <button type="submit">Submit</button>
+        <button type="submit">Agregar</button>
       </form>
     </div>
   );

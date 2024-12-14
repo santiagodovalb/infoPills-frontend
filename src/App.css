@@ -4,11 +4,13 @@
 .App {
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: #f5f5f5;
   width: 100vw;
+  gap: 32px;
 }
 
 #root {

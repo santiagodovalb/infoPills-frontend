@@ -45,7 +45,7 @@ const DeletePill: React.FC = () => {
           onChange={(e) => setDibujo(e.target.value)} 
           required 
         />
-        <button type="submit">Delete Pill</button>
+        <button type="submit">Eliminar</button>
       </form>
 
       {message && <p style={{ color: 'green' }}>{message}</p>}
