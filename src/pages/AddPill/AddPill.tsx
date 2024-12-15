@@ -1,6 +1,6 @@
 import React from 'react';
 import PillForm from '../../components/PillForm/PillForm';
-import Layout from '../../layout/Layout';
+import Layout from '../../layout/layout';
 
 const AddPill: React.FC = () => {
 
