@@ -41,7 +41,7 @@ const AddPill: React.FC = () => {
     }
 
     try {
-      const response = await axios.post('https://your-backend-url/pills', formData, {
+      const response = await axios.post(import.meta.env.VITE_API_URL, formData, {
         headers: { 'Content-Type': 'application/json' },
       });
       

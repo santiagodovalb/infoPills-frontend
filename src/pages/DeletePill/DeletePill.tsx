@@ -12,7 +12,7 @@ const DeletePill: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.delete('https://your-api-url/pills', {
+      const response = await axios.delete(import.meta.env.VITE_API_URL, {
         data: { color, dibujo },  // Sending `color` and `dibujo` for deletion
       });
       
