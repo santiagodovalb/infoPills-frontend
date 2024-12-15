@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PillForm from '../PillForm/PillForm';
 import './Pill.css';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 
 interface PillProps {
     color: string;
