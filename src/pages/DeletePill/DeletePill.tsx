@@ -10,11 +10,9 @@ const DeletePill: React.FC = () => {
 
   const handleDelete = async (e: React.FormEvent) => {
     e.preventDefault();
-
+console.log({color, dibujo})
     try {
-      const response = await axios.delete(import.meta.env.VITE_API_URL, {
-        data: { color, dibujo },  // Sending `color` and `dibujo` for deletion
-      });
+      const response = await axios.delete(`${import.meta.env.VITE_API_URL}?color=${color}&dibujo=${dibujo}`);
       
       setMessage(response.data.message || 'Pill deleted successfully');
       setError('');

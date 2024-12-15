@@ -41,7 +41,8 @@ const AddPill: React.FC = () => {
     }
 
     try {
-      const response = await axios.post(import.meta.env.VITE_API_URL, formData, {
+      const response = await axios.post(import.meta.env.VITE_API_URL, null, {
+        params: formData,
         headers: { 'Content-Type': 'application/json' },
       });
       
