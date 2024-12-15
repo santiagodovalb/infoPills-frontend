@@ -1,0 +1,83 @@
+/* Pill.css */
+
+.pill {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-left: 8px solid transparent;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 600px;
+}
+
+.pill:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pill-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 16px;
+}
+
+.pill-data {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555555;
+    font-weight: 600;
+}
+
+.pill-info {
+    font-size: 0.9rem;
+    color: #777777;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.pill-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.pill-edit-button,
+.pill-delete-button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pill-edit-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.pill-edit-button:hover {
+    background-color: #45a049;
+}
+
+.pill-delete-button {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+.pill-delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.pill-form-container {
+    flex-basis: 100%;
+    margin-top: 10px;
+}
